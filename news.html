@@ -1,58 +1,60 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <title>News</title>
-  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-   <!-- Navigation -->
- 
+  <!-- Navigation -->
+
   <nav class="navbar"></nav>
-        <ul>
-            <li><a class="active" href="index.html">Heal the World</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="about.html">About</a></li>
-            <li style="float:right"><a href="support.html">Support</a></li>
-        </ul>
-    </nav>
-<!-- Dropdown menu-->
+  <ul>
+    <li><a class="active" href="index.html">Heal the World</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="about.html">About</a></li>
+    <li style="float:right"><a href="support.html">Support</a></li>
+  </ul>
+  </nav>
+  <!-- Dropdown menu-->
   <div class="dropdown">
     <button class="dropbtn">Palestine News</button>
     <div class="dropdown-content">
-        <a href="#">[27/07] Protest in Gaza</a>
-        <a href="#">[26/07] UN condemns airstrikes</a>
-        <a href="#">[25/07] International support grows</a>
+      <a href="#">[27/07] Protest in Gaza</a>
+      <a href="#">[26/07] UN condemns airstrikes</a>
+      <a href="#">[25/07] International support grows</a>
     </div>
-</div> 
- <!--  FORM -->
-<h3 style="margin-left: 4rem;">Submit a News Article</h3>
-<form style="justify-content: center;">
-  <label for="title">Title:</label><br>
-  <input type="text" id="title" name="title" required><br><br>
+  </div>
+  <!--  FORM -->
+  <h3 style="margin-left: 4rem;">Submit a News Article</h3>
+  <form style="justify-content: center;">
+    <label for="title">Title:</label><br>
+    <input type="text" id="title" name="title" required><br><br>
 
-  <label for="link">Source Link:</label><br>
-  <input type="url" id="link" name="link" required><br><br>
+    <label for="link">Source Link:</label><br>
+    <input type="url" id="link" name="link" required><br><br>
 
-  <label for="description">Description:</label><br>
-  <textarea id="description" name="description" rows="4" cols="40"></textarea><br><br>
+    <label for="description">Description:</label><br>
+    <textarea id="description" name="description" rows="4" cols="40"></textarea><br><br>
 
-  <label for="author">Your Name (optional):</label><br>
-  <input type="text" id="author" name="author"><br><br>
+    <label for="author">Your Name (optional):</label><br>
+    <input type="text" id="author" name="author"><br><br>
 
-  <input type="submit" value="Submit">
-</form>
+    <input type="submit" value="Submit">
+  </form>
   <style>
-              body{ background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-                url('./sadpalestine.webp');
-                background-size: cover;
-                background-position: center;
-                color: white
-              }
-
-
-    </style>
+    body {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('./sadpalestine.webp');
+      background-size: cover;
+      background-position: center;
+      color: white
+    }
+  </style>
 
 </body>
+
 </html>
