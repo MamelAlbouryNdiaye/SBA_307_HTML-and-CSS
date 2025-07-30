@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css"> <!-- ton fichier CSS -->
+</head>
+<body>
+
+   <!-- Navigation -->
+ 
+  <nav class="navbar"></nav>
+        <ul>
+            <li><a class="active" href="index.html">Heal the World</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="about.html">About</a></li>
+            <li style="float:right"><a href="support.html">Support</a></li>
+        </ul>
+    </nav>
+
+    <style>
+              body{ background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('./sadpalestine.webp');
+                background-size: cover;
+                background-position: center;
+                color: white
+              }
+
+
+    </style>
+
+   <h3 style="margin-top: 5rem; margin-left: 3rem; margin-right: 3rem; color: rgb(219, 209, 209)">
+    This section allows you to list organizations that work in the humanitarian field. You can add NGOs if you know any.
+    But to respect the requirements of the subject,
+    we limit ourselves to the static display without using nodejs because HTML and CSS cannot save data dynamically.
+   </h3> 
+
+  <div class="container">
+    <!-- Partie gauche : Table -->
+    <div class="ong-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Country</th>
+            <th>Domaine</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Human Appeal</td>
+            <td>Royaume-Uni</td>
+            <td>Humanitarian aid</td>
+          </tr>
+          <tr>
+            <td>Islamic Relief</td>
+            <td>International</td>
+            <td>Food & health support</td>
+          </tr>
+          <tr>
+            <td>Medical Aid for Palestinians</td>
+            <td>United Kingdom</td>
+            <td>health</td>
+          </tr>
+          <tr>
+            <td>UNRWA</td>
+            <td>ONU</td>
+            <td>Palestinian refugees</td>
+          </tr>
+          <tr>
+            <td>Palestine Children's Relief Fund</td>
+            <td>USA</td>
+            <td>Support for children</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Partie droite : Formulaire -->
+    <div class="formulaire">
+      <h2>Add a NGO</h2>
+      <form>
+        <label for="nom">NGO name</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <label for="pays">Country</label>
+        <input type="text" id="pays" name="pays">
+
+        <label for="domaine">Area of intervention</label>
+        <textarea id="domaine" name="domaine" rows="3"></textarea>
+
+        <button type="submit">Add</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
